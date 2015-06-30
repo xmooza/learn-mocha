@@ -1,9 +1,11 @@
-Learn Mocha [![Build Status](https://travis-ci.org/nelsonic/learn-mocha.png?branch=master)](https://travis-ci.org/nelsonic/learn-mocha) [![Coverage Status](https://coveralls.io/repos/nelsonic/learn-mocha/badge.png)](https://coveralls.io/r/nelsonic/learn-mocha) [![Code Climate](https://codeclimate.com/github/nelsonic/learn-mocha.png)](https://codeclimate.com/github/nelsonic/learn-mocha) [![devDependency Status](https://david-dm.org/nelsonic/learn-mocha/dev-status.svg)](https://david-dm.org/nelsonic/learn-mocha#info=devDependencies) 
+Learn Mocha [![Build Status](https://travis-ci.org/docdis/learn-mocha.png?branch=master)](https://travis-ci.org/docdis/learn-mocha) [![Test Coverage](https://codeclimate.com/github/docdis/learn-mocha/badges/coverage.svg)](https://codeclimate.com/github/docdis/learn-mocha/coverage) [![Code Climate](https://codeclimate.com/github/docdis/learn-mocha.png)](https://codeclimate.com/github/docdis/learn-mocha) [![devDependency Status](https://david-dm.org/docdis/learn-mocha/dev-status.svg)](https://david-dm.org/docdis/learn-mocha#info=devDependencies)
 ===========
 
 *Quick Guide* to **mocha.js** Test Driven Development (TDD) in **node.js**
 
-![Cowboy Coder](https://raw.github.com/nelsonic/learn-mocha/master/images/cowboy-coder.png "Cowboy Coder")
+> **Note**: This tutorial is an intro to Testing with Mocha. If you are looking for a more _detailed_ **T**est **D**riven **D**evelopment (**TDD**) Tutorial see: [https://github.com/nelsonic/**learn-tdd**](https://github.com/nelsonic/learn-tdd)
+
+![Cowboy Coder](http://i.imgur.com/N0VqWcL.png "Cowboy Coder")
 
 We all know *Cowboy Coders*. (*If you don't, its you!*)
 
@@ -14,10 +16,11 @@ everything starts breaking ... "*it was working this morning*" ...
 
 - - -
 
-#### Installation
+
+## Installation
 
 ```sh
-sudo npm install -g mocha
+npm install mocha -g --save-dev
 ```
 
 You should see some output *confirming* it *installed*:
@@ -25,6 +28,9 @@ You should see some output *confirming* it *installed*:
 ![Mocha Installed](https://raw.github.com/nelsonic/learn-mocha/master/images/mocha-installed.png "Mocha Installed Successfully")
 
 More info: http://mochajs.org/#installation
+
+> **Tip**: _avoid_ installing node.js modules using `sudo`  
+> see: http://stackoverflow.com/questions/16151018/npm-throws-error-without-sudo
 
 ### First Tests
 
@@ -206,7 +212,7 @@ two arguments/parameters (**totalPayable** and **cashPaid**) and return an
 array containing the coins equal to the difference:
 
 e.g:
-```
+```js
 totalPayable = 210         // £2.10
 cashPaid     = 300         // £3.00
 dfference    =  90         // 90p
@@ -369,11 +375,7 @@ https://github.com/nelsonic/learn-travis
 
 ![Travis Enabled](https://raw.github.com/nelsonic/learn-mocha/master/images/travis-on.png "Travis Enabled")
 
-[![Build Status](https://travis-ci.org/nelsonic/learn-mocha.png?branch=master)](https://travis-ci.org/nelsonic/learn-mocha)
-
-![Travis Build Pass](https://raw.github.com/nelsonic/learn-mocha/master/images/learn-travis-build-passing.png "Travis Build Passing")
-
-Done.
+Done. [![Travis Build Status](https://travis-ci.org/docdis/learn-mocha.svg)](https://travis-ci.org/docdis/learn-mocha)
 
 - - -
 
@@ -469,7 +471,7 @@ Advanced:
 
 Code without tests is like a *building without a foundation*!
 
-![Building Collapse](https://raw.github.com/nelsonic/learn-mocha/master/images/building-collapse-940x627.jpg "Building Collapse")
+![Building Collapse](http://i.imgur.com/Iske6zG.jpg "Building Collapse")
 
 Its only a matter of *time* before it all comes crashing down ...
 

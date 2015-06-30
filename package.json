@@ -5,16 +5,20 @@
     "url": "https://github.com/nelsonic/learn-mocha.git"
   },
   "description": "Simple mocha.js tutorial including istanbul test coverage",
-  "author": "https://twitter.com/nelsonic",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "devDependencies": {
-    "mocha": "1.21.4",
-    "istanbul":"0.3.2",
-    "coveralls":"2.11.1"
+    "mocha": "^2.2.5",
+    "istanbul":"^0.3.17",
+    "codeclimate-test-reporter": "^0.0.4"
   },
   "scripts": {
-    "test": "mocha",
-    "coverage":"istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
-    "coveralls":"istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test": "./node_modules/mocha/bin/mocha",
+    "coverage":"istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec",
+    "codeclimate": "CODECLIMATE_REPO_TOKEN=8138682931f34a05f1829d6c49d791a097e820489d6f98d3d0c0d829c5612585 ./node_modules/codeclimate-test-reporter/bin/codeclimate.js < ./coverage/lcov.info"
+  },
+  "author": "nelsonic <nodecoder@gmail.com> (https://github.com/nelsonic)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/docids/learn-mocha/issues"
   }
 }
