@@ -14,3 +14,10 @@ npm install
 ```
 npm run test
 ```
+
+### Git workflow
+* Create and checkout into a new branch `git checkout -b <your-branch-name>`
+* Make changes locally
+* `git status` to see the state of your changes
+* `git commit -am "Fixing the build"` to commit your changes
+* `git push origin <your-branch-name>`
